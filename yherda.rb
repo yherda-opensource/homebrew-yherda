@@ -5,21 +5,21 @@
 class Yherda < Formula
   desc "Command line interface for Yherda"
   homepage "https://github.com/yherda-opensource/yherda-cmd"
-  version "0.2.1"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.1/yherda-cmd_0.2.1_darwin_amd64.tar.gz"
-      sha256 "af50ea185dc57539adfa87185655ae6a5d2cb95e5bbc8ef4819c5c0733b44384"
+      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.5/yherda-cmd_0.2.5_darwin_amd64.tar.gz"
+      sha256 "56a4a2fdb46433fccd77036e31ffebe1c631c3662fb9df87a35f48843cdea7a1"
 
       define_method(:install) do
         bin.install "yherda"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.1/yherda-cmd_0.2.1_darwin_arm64.tar.gz"
-      sha256 "3ea53a12d2ec4024fb46669853569dd414cb1dc4f770ebbd69cb407e1732d528"
+      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.5/yherda-cmd_0.2.5_darwin_arm64.tar.gz"
+      sha256 "8483e6c8b503663dc3ed253190477b3a3f8bbd2d9f9284a04279129999834620"
 
       define_method(:install) do
         bin.install "yherda"
@@ -29,15 +29,15 @@ class Yherda < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.1/yherda-cmd_0.2.1_linux_amd64.tar.gz"
-      sha256 "74b18ce54190aa263457caeaa51468cde9213a9350677893468f54c0e36c42ad"
+      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.5/yherda-cmd_0.2.5_linux_amd64.tar.gz"
+      sha256 "c918e893d5d8ac6724dd82ded4278873ee0e43dc38ee7ccfb3bfad566ab54a8f"
       define_method(:install) do
         bin.install "yherda"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.1/yherda-cmd_0.2.1_linux_arm64.tar.gz"
-      sha256 "b32db7e3b4d2cbe60b59806306bbc7699115c3ec51f606d22a80920e0f229e87"
+      url "https://github.com/yherda-opensource/yherda-cmd/releases/download/v0.2.5/yherda-cmd_0.2.5_linux_arm64.tar.gz"
+      sha256 "137ab80fc3f3d85615bfcf5b8eb01551fe152ea6908100638bc8802f93e298ed"
       define_method(:install) do
         bin.install "yherda"
       end
